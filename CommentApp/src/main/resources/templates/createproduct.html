@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- CSS only -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container mt-4">
+    <form action="createproduct" class="row  w-50 mt1 mx-auto" method="post">
+
+        <div class="col-12">
+            <label class="form-label">İsim </label>
+            <input class="form-control" name="name" placeholder="Lütfen ürün ismi giriniz" type="text">
+
+        </div>
+        <div class="col-12">
+            <label class="form-label">Ürün Fiyatı </label>
+            <input class="form-control" name="price" placeholder="Lütfen ürün fiyatı giriniz" type="text">
+
+        </div>
+        <div class="col-12">
+            <label class="form-label">Son Kullanma Tarihi </label>
+            <input class="form-control" name="expirationDate" type="date">
+
+        </div>
+
+        <div>
+            <button class="btn btn-primary mt-3" type="submit"> Kaydet</button>
+        </div>
+
+    </form>
+
+
+</div>
+
+</body>
+</html>
